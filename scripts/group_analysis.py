@@ -1,4 +1,3 @@
-<pre>
 import scipy
 from scipy.stats import kurtosis, skew
 import gzip
@@ -220,4 +219,3 @@ new = open('controls.txt', 'a+')
 outline = sample2 + ' ' + str(round(float(l/k)*100, 5)) + '\n'
 new.write(outline)
 new.close
-<pre>
