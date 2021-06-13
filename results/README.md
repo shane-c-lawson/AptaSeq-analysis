@@ -1,5 +1,5 @@
 <pre>
-*mistake: control reads is actual controls hit. I'll need to redo it to count the actual control reads number
+*mistake: control reads is actually controls hit. I'll need to redo it to count the actual control reads number
 
 10k-5
 Total reads: 1351302
