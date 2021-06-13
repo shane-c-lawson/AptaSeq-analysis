@@ -4,7 +4,6 @@ import gzip
 import operator
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib import rc
 import pandas as pd
 from itertools import islice
 import sys
@@ -33,7 +32,7 @@ base_dir = "/home/FCAM/slawson/miseq/210610_M01212_0292_000000000-JPPMK/Data/Int
 sample = sys.argv[1]; sample2 = sample.split('_')[0]
 read_fields = ['read', 'seq', 'strand', 'qual']
 openfile = open(base_dir + 'deduped/' + sample + '_R2_processed.fastq', 'r')
-i = 0; j = 0; k = 0; l = 0; m = 0; dups = 0; read_info = {}; aptamers = {}; groups = {}; control_hits = []; control_hits_bad = []; c = 0; control_found = False
+i = 0; j = 0; k = 0; l = 0; m = 0; dups = 0; read_info = {}; aptamers = {}; groups = {}; control_hits = []; control_hits_bad = []; c = 0; conts = 0; control_found = False
 for line in openfile :
 	line = line.strip()
 	if i == 4 :
@@ -57,7 +56,7 @@ for line in openfile :
 				aptamers[aptamer] += 1
 			else :
 				aptamers[aptamer] = 1
-				if aptamer == pos_control_1 :	#finds literal match instead of %match
+				if aptamer == pos_control_1 :	#finds literal match instead of % match
 					l += 1
 					control_hits.append(aptamer)
 					control_found = True
@@ -119,6 +118,7 @@ if control_found == True :
 	colors = []
 	for aptamer in aptamers_sorted.keys() :
 		if aptamer in control_hits :
+			conts += aptamers_sorted[aptamer]
 			colors.append('g')
 		elif aptamer in control_hits_bad :
 			colors.append('r')
@@ -195,7 +195,7 @@ print('Percent usable reads: ' + str(round(float(k/int(input))*100, 2)) + '%')
 print('Total unique aptamers: ' + str(len(aptamers)))
 print('Aptamers with multi-hits: ' + str(dups))
 #print('Total groups: ' + str(len(groups)))		#only with complete hamming check
-print('Total positive control reads: ' + str(l))
+print('Total positive control reads: ' + str(conts))
 print('Percent positive control reads: ' + str(round(float(l/k)*100, 5)) + '%')
 print('Total negative control reads: ' + str(m))
 print('Skewness of aptamers: ' + str(round(skew, 2)) + '\n')
@@ -216,6 +216,6 @@ new.write(outline)
 new.close
 
 new = open('controls.txt', 'a+')
-outline = sample2 + ' ' + str(round(float(l/k)*100, 5)) + '\n'
+outline = sample2 + ' ' + str(round(float(conts/k)*100, 5)) + '\n'
 new.write(outline)
 new.close
