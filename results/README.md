@@ -103,20 +103,11 @@ Percent positive control reads: 0.00049%
 Total negative control reads: 0
 Skewness of aptamers: 86.84
 
+
 Best distribution: 50k-100 (89.19 skewness)
 Worst distribution: 10k-50 (54.46 skewness)
 
 Best control performance: 50k-100 (0.00131 controls per read)
-Worst control performance: 10k-5 (0.00017 controls per read)
-
-Best (lowest) diversity: 10k-5 (0.99945 unique aptamers per read)
-Worst (highest) diversity: 100k-5 (0.99987 unique aptamers per read)
-
-
-Best distribution: 50k-100 (89.19 skewness)
-Worst distribution: 10k-50 (54.46 skewness)
-
-Best control performance: 100k-50 (0.00049 controls per read)
 Worst control performance: 10k-5 (0.00017 controls per read)
 
 Best (lowest) diversity: 10k-5 (0.99945 unique aptamers per read)
