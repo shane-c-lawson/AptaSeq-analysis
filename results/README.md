@@ -1,5 +1,5 @@
 <pre>
-10k-5
+**10k cells, 5 copies/cell**
 Total reads: 1351302
 Reads with passing UMI: 1348000
 Total deduplicated reads: 707397
@@ -12,7 +12,7 @@ Percent positive control reads: 0.00017%
 Total negative control reads: 0
 Skewness of aptamers: 64.41
 
-10k-50
+10k cells, 50 copies/cell
 Total reads: 2672592
 Reads with passing UMI: 2666114
 Total deduplicated reads: 907962
@@ -25,7 +25,7 @@ Percent positive control reads: 0.00041%
 Total negative control reads: 0
 Skewness of aptamers: 54.46
 
-10k-100
+10k cells, 100 copies/cell
 Total reads: 3489405
 Reads with passing UMI: 3480638
 Total deduplicated reads: 965172
@@ -38,7 +38,7 @@ Percent positive control reads: 0.00079%
 Total negative control reads: 0
 Skewness of aptamers: 59.64
 
-50k-5
+50k cells, 5 copies/cell
 Total reads: 966055
 Reads with passing UMI: 963684
 Total deduplicated reads: 596136
@@ -51,7 +51,7 @@ Percent positive control reads: 0.00039%
 Total negative control reads: 0
 Skewness of aptamers: 74.46
 
-50k-50
+50k cells, 50 copies/cell
 Total reads: 938153
 Reads with passing UMI: 935812
 Total deduplicated reads: 582153
@@ -64,7 +64,7 @@ Percent positive control reads: 0.00101%
 Total negative control reads: 0
 Skewness of aptamers: 80.91
 
-50k-100
+50k cells, 100 copies/cell
 Total reads: 1078133
 Reads with passing UMI: 1075482
 Total deduplicated reads: 630930
@@ -77,7 +77,7 @@ Percent positive control reads: 0.00131%
 Total negative control reads: 0
 Skewness of aptamers: 89.19
 
-100k-5
+100k cells, 5 copies/cell
 Total reads: 363094
 Reads with passing UMI: 362223
 Total deduplicated reads: 295168
@@ -90,7 +90,7 @@ Percent positive control reads: 0.00077%
 Total negative control reads: 1
 Skewness of aptamers: 87.17
 
-100k-50
+100k cells, 50 copies/cell
 Total reads: 665274
 Reads with passing UMI: 663691
 Total deduplicated reads: 471210
