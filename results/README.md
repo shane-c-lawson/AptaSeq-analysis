@@ -1,5 +1,5 @@
 <pre>
-**10k cells, 5 copies/cell**
+10k cells, 5 copies/cell
 Total reads: 1351302
 Reads with passing UMI: 1348000
 Total deduplicated reads: 707397
