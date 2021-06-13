@@ -197,7 +197,7 @@ print('Total unique aptamers: ' + str(len(aptamers)))
 print('Aptamers with multi-hits: ' + str(dups))
 #print('Total groups: ' + str(len(groups)))		#only with complete hamming check
 print('Total positive control reads: ' + str(conts))
-print('Percent positive control reads: ' + str(round(float(l/k)*100, 5)) + '%')
+print('Percent positive control reads: ' + str(round(float(conts/k)*100, 5)) + '%')
 print('Total negative control reads: ' + str(m))
 print('Skewness of aptamers: ' + str(round(skew, 2)) + '\n')
 
