@@ -14,7 +14,7 @@ samples="10k-5_S1 10k-50_S2 10k-100_S3 50k-5_S4 50k-50_S5 50k-100_S6 100k-5_S7 1
 for sample in $samples; do
     zcat $base_dir/$sample"_L001_R1_001.fastq.gz" > $base_dir/$sample"_L001_R1_001.fastq"
     python /home/FCAM/slawson/UMI-Reducer/AmpUMI/AmpUMI.py Process --fastq $base_dir/$sample"_L001_R1_001.fastq" --fastq_out $base_dir/AptaSeq/deduped/$sample"_R2_processed.fastq" --umi_regex "^IIIIIIIIII" > out.txt
-	python $base_dir/AptaSeq/group_analysis.py $sample
+    python $base_dir/AptaSeq/group_analysis.py $sample
 done
 
 python $base_dir/AptaSeq/final_stats.py
