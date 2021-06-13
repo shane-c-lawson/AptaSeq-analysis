@@ -1,4 +1,4 @@
-# AptaSeq-analysis
+# AptaSeq Analysis
 
 This pipeline treats each unique 40-mer down to the base as a separate aptamer. An alternative approach I tried was to treat sequences with 90%+ identity, or <= 4 mismatches, as the same aptamer in order to increase the tallied number of hits for that group and better deconvolute which varieties perform the best across the entire pool. Unfortunately, with hundreds of thousands of unique aptamers present across the reads, calculating the Hamming distance between every single possible combination in order to create those groupings leads to a ridiculously high programming complexity that I estimate could take weeks to process. It could be done, and theoritically in a situation where we aim to identify ideal aptamers for potential therapeutics, it might be ideal. If you want to look at how I apprached the analysis, it is left in the script though bypassed as "comments".
 
