@@ -1,6 +1,4 @@
 <pre>
-*mistake: control reads is actually controls hit. I'll need to redo it to count the actual control reads number
-
 10k-5
 Total reads: 1351302
 Reads with passing UMI: 1348000
@@ -22,7 +20,7 @@ Usable reads: 725229
 Percent usable reads: 27.14%
 Total unique aptamers: 724979
 Aptamers with multi-hits: 250
-Total positive control reads: 2
+Total positive control reads: 3
 Percent positive control reads: 0.00028%
 Total negative control reads: 0
 Skewness of aptamers: 54.46
@@ -35,7 +33,7 @@ Usable reads: 755515
 Percent usable reads: 21.65%
 Total unique aptamers: 755272
 Aptamers with multi-hits: 243
-Total positive control reads: 2
+Total positive control reads: 6
 Percent positive control reads: 0.00026%
 Total negative control reads: 0
 Skewness of aptamers: 59.64
@@ -48,7 +46,7 @@ Usable reads: 510486
 Percent usable reads: 52.84%
 Total unique aptamers: 510394
 Aptamers with multi-hits: 92
-Total positive control reads: 1
+Total positive control reads: 2
 Percent positive control reads: 0.0002%
 Total negative control reads: 0
 Skewness of aptamers: 74.46
@@ -61,7 +59,7 @@ Usable reads: 494308
 Percent usable reads: 52.69%
 Total unique aptamers: 494207
 Aptamers with multi-hits: 101
-Total positive control reads: 2
+Total positive control reads: 5
 Percent positive control reads: 0.0004%
 Total negative control reads: 0
 Skewness of aptamers: 80.91
@@ -74,7 +72,7 @@ Usable reads: 534342
 Percent usable reads: 49.56%
 Total unique aptamers: 534225
 Aptamers with multi-hits: 117
-Total positive control reads: 2
+Total positive control reads: 7
 Percent positive control reads: 0.00037%
 Total negative control reads: 0
 Skewness of aptamers: 89.19
@@ -87,7 +85,7 @@ Usable reads: 258484
 Percent usable reads: 71.19%
 Total unique aptamers: 258450
 Aptamers with multi-hits: 34
-Total positive control reads: 1
+Total positive control reads: 2
 Percent positive control reads: 0.00039%
 Total negative control reads: 1
 Skewness of aptamers: 87.17
@@ -100,10 +98,19 @@ Usable reads: 405381
 Percent usable reads: 60.93%
 Total unique aptamers: 405322
 Aptamers with multi-hits: 59
-Total positive control reads: 2
+Total positive control reads: 5
 Percent positive control reads: 0.00049%
 Total negative control reads: 0
 Skewness of aptamers: 86.84
+
+Best distribution: 50k-100 (89.19 skewness)
+Worst distribution: 10k-50 (54.46 skewness)
+
+Best control performance: 50k-100 (0.00131 controls per read)
+Worst control performance: 10k-5 (0.00017 controls per read)
+
+Best (lowest) diversity: 10k-5 (0.99945 unique aptamers per read)
+Worst (highest) diversity: 100k-5 (0.99987 unique aptamers per read)
 
 
 Best distribution: 50k-100 (89.19 skewness)
@@ -114,6 +121,7 @@ Worst control performance: 10k-5 (0.00017 controls per read)
 
 Best (lowest) diversity: 10k-5 (0.99945 unique aptamers per read)
 Worst (highest) diversity: 100k-5 (0.99987 unique aptamers per read)
+
 
 Aptamers with duplicate hits in multiple samples
 ATCCTCGTCCCGTCACGGCAGAACCACGTCAGGCCTTCAA: 6 samples *positive control
