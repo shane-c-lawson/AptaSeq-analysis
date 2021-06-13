@@ -70,7 +70,7 @@ if wd == True :
 	print('Worst (highest) diversity: ' + worst_div_sample + ' (' + str(worst_div) + ' unique aptamers per read)' + '\n')
 
 if hit_ever == True :
-	print('Aptamers with duplicate hits in multiple samples')
+	print('Aptamers with duplicate hits in multiple samples:')
 	for group in groups :
 		if groups[group] > 1 :
-			print(group + ': ' + str(groups[group]) + ' samples')
+			print(group + ' - ' + str(groups[group]) + ' samples')
