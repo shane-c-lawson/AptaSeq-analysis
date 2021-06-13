@@ -103,6 +103,7 @@ Percent positive control reads: 0.00049%
 Total negative control reads: 0
 Skewness of aptamers: 86.84
 
+
 Best distribution: 50k-100 (89.19 skewness)
 Worst distribution: 10k-50 (54.46 skewness)
 
