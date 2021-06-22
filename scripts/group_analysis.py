@@ -12,8 +12,8 @@ from scipy.spatial.distance import hamming
 
 pos_control_1 = 'ATCCTCGTCCCGTCACGGCAGAACCACGTCAGGCCTTCAA'
 pos_control_2 = 'CCCTAGTTACTACTACTCTTTTTAGCAAACGCCCTCGCTT' #full-length = TGCCCTAGTTACTACTACTCTTTTTAGCAAACGCCCTCGCTT
-neg_control_1 = 'AGTCCATTTTATTCCTGAATATTTGTTAACCTCATGGACN' #requires equal lengths
-neg_control_2 = 'TGGACAGGGTTAGGCGTAGGAGTTGAGTTTTTGAGACANN' #requires equal lengths
+neg_control_1 = 'AGTCCATTTTATTCCTGAATATTTGTTAACCTCATGGAC' #requires equal lengths
+neg_control_2 = 'TGGACAGGGTTAGGCGTAGGAGTTGAGTTTTTGAGACA' #requires equal lengths
 neg_control_3 = 'ATCGATCGATCGATCGATCGATCGATCGATCGATCGATCG'
 
 def Rev_comp(seq) :
@@ -65,11 +65,11 @@ for line in openfile :
 					l += 1
 					control_hits.append(aptamer)
 					control_found = True
-				if aptamer == neg_control_1 :
+				if neg_control_1 in aptamer :	#different sizes
 					m += 1
 					control_hits_bad.append(aptamer)
 					control_found = True
-				if aptamer == neg_control_2 :
+				if neg_control_2 in aptamer :	#different sizes
 					m += 1
 					control_hits_bad.append(aptamer)
 					control_found = True
